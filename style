@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #222;
+}
+
+header {
+  background-color: #900;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.semestres-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.semestre {
+  min-width: 280px;
+  background-color: #f9f9f9;
+  border: 2px solid #900;
+  border-radius: 12px;
+  padding: 0.5rem;
+  flex-shrink: 0;
+}
+
+.semestre h2 {
+  text-align: center;
+  color: #900;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.materia {
+  background-color: #ffe5e5;
+  border: 1px solid #900;
+  border-radius: 8px;
+  padding: 0.4rem;
+  margin: 0.3rem 0;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.materia.aprobada {
+  background-color: #d4edda;
+  border-color: #28a745;
+  text-decoration: line-through;
+}
+
+.creditos-aprobados {
+  margin: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #900;
+  text-align: center;
+}
