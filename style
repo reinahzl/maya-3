@@ -1,62 +1,88 @@
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #fff;
-  color: #222;
+  background-color: #fff5f5;
+  color: #660000;
+  margin: 20px;
+  padding: 0;
 }
 
-header {
-  background-color: #900;
-  color: white;
-  padding: 1rem;
+h1 {
   text-align: center;
+  color: #990000;
+  margin-bottom: 0.2em;
 }
 
-.semestres-container {
+p {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-size: 1rem;
+}
+
+#total-creditos-container {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+#semestres {
   display: flex;
-  flex-direction: row;
+  gap: 25px;
   overflow-x: auto;
-  gap: 1rem;
-  padding: 1rem;
+  padding-bottom: 10px;
 }
 
 .semestre {
-  min-width: 280px;
-  background-color: #f9f9f9;
-  border: 2px solid #900;
-  border-radius: 12px;
-  padding: 0.5rem;
-  flex-shrink: 0;
+  min-width: 220px;
+  background-color: #ffdede;
+  border: 2px solid #cc0000;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  max-height: 600px;
+  overflow-y: auto;
 }
 
 .semestre h2 {
+  font-size: 1.1rem;
   text-align: center;
-  color: #900;
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #660000;
+  border-bottom: 1px solid #cc0000;
+  padding-bottom: 6px;
 }
 
 .materia {
-  background-color: #ffe5e5;
-  border: 1px solid #900;
-  border-radius: 8px;
-  padding: 0.4rem;
-  margin: 0.3rem 0;
+  background-color: #ffcccc;
+  border: 2px solid #990000;
+  border-radius: 6px;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  text-align: center;
   cursor: pointer;
-  font-size: 0.85rem;
-  transition: all 0.3s ease;
+  user-select: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.materia.bloqueada {
+  background-color: #eee;
+  border-color: #bbb;
+  color: #999;
+  cursor: not-allowed;
 }
 
 .materia.aprobada {
-  background-color: #d4edda;
-  border-color: #28a745;
-  text-decoration: line-through;
+  background-color: #cc0000;
+  color: white;
+  border-color: #800000;
 }
 
-.creditos-aprobados {
-  margin: 1rem;
-  font-weight: bold;
-  font-size: 1rem;
-  color: #900;
-  text-align: center;
+.materia:hover:not(.bloqueada) {
+  background-color: #d94f4f;
+  color: white;
 }
