@@ -1,1 +1,16 @@
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malla Curricular Interactiva - Derecho</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Malla Curricular Interactiva - Derecho</h1>
+  <p>Haz clic en una materia para "aprobarla" y desbloquear las que dependen de ella.</p>
+  <div id="creditos">Créditos aprobados: 0</div>
+  <div id="malla"></div>
+  <script src="script.js"></script>
+</body>
+</html>
